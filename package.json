@@ -35,7 +35,7 @@
     "@storybook/react": "^7.2.3",
     "@storybook/testing-library": "^0.2.0",
     "@types/node": "20.4.9",
-    "@types/react": "18.2.20",
+    "@types/react": "^18.2.6",
     "@types/react-dom": "18.2.7",
     "autoprefixer": "^10.4.14",
     "cross-env": "^7.0.3",
