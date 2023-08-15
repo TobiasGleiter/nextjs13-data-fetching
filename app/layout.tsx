@@ -1,3 +1,5 @@
+import Footer from '@/components/navigation/footer/Footer';
+import Header from '@/components/navigation/header/Header';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import './globals.css';
@@ -17,9 +19,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div>Header</div>
-        {children}
-        <div>Footer</div>
+        <Header />
+        <div className="max-w-5xl flex flex-col md:flex-col mx-4 pt-20 lg:mx-auto min-h-screen font-mono text-sm">
+          {children}
+        </div>
+        <Footer />
       </body>
     </html>
   );

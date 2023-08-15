@@ -1,17 +1,15 @@
-import PostList from '@/components/list/post/PostList';
-import getPosts from '@/lib/posts/getPosts';
-import { Suspense } from 'react';
+import Link from 'next/link';
 
 export default async function Home() {
-  const posts = getPosts();
-
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between px-12  lg:px-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm flex">
-        <Suspense fallback="Loading...">
-          {/* @ts-expect-error Server Component */}
-          <PostList promise={posts} />
-        </Suspense>
+    <main>
+      <h1 className="text-lg mb-4">
+        This website focuses on data fetching in Next.js 13. Additionally, I
+        have tested pagination loading for photos.
+      </h1>
+      <div className="space-y-2">
+        <Link href="/posts">Next.js 13 data fetching server side</Link>
+        <Link href="/photos">Client Side pagination loading</Link>
       </div>
     </main>
   );
