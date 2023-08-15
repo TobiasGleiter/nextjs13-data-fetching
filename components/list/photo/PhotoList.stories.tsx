@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Meta, StoryFn } from '@storybook/react';
 import PhotoList, { IPhotoList } from './PhotoList';
 import { mockPhotoListProps } from './PhotoList.mocks';
